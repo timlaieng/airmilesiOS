@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LRy-a1-Gkd">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="MileageCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Data provided by wheretocredit.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtw-in-MC7">
+                                <rect key="frame" x="112" y="626" width="191" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scroll by:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cga-6x-pvY">
+                                <rect key="frame" x="22" y="416" width="116" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XEa-SD-T4y" userLabel="Airline">
+                                <rect key="frame" x="0.0" y="436" width="414" height="103"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BGw-kD-3Rf">
+                                <rect key="frame" x="169" y="412" width="183" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Airline Name"/>
+                                    <segment title="Airline Code"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlSwitched:" destination="BYZ-38-t0r" eventType="valueChanged" id="NZZ-NH-BcR"/>
+                                </connections>
+                            </segmentedControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="otF-EV-bBG">
+                                <rect key="frame" x="40" y="84" width="190" height="150"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zkM-Sh-Uyk">
+                                        <rect key="frame" x="0.0" y="0.0" width="190" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4Q-KJ-MUe">
+                                                <rect key="frame" x="0.0" y="0.0" width="190" height="30"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <state key="normal" title="Departure Airport: (Not set)">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="auJ-id-ohT" kind="show" id="6v8-Qa-cHk"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="wef-ba-f6F">
+                                        <rect key="frame" x="0.0" y="60" width="190" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdu-p9-cEe">
+                                                <rect key="frame" x="0.0" y="0.0" width="190" height="30"/>
+                                                <state key="normal" title="Arrival Airport: (Not Set)">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fC4-AL-jmc">
+                                        <rect key="frame" x="0.0" y="120" width="190" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Pz-KG-vYg">
+                                                <rect key="frame" x="0.0" y="0.0" width="190" height="30"/>
+                                                <state key="normal" title="Fare Class: (Not Set)">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wef-ba-f6F" secondAttribute="trailing" id="05e-G3-tAE"/>
+                                    <constraint firstAttribute="trailing" secondItem="fC4-AL-jmc" secondAttribute="trailing" id="6tt-Li-fb0"/>
+                                    <constraint firstItem="zkM-Sh-Uyk" firstAttribute="leading" secondItem="otF-EV-bBG" secondAttribute="leading" id="Bdm-5y-Yna"/>
+                                    <constraint firstItem="zkM-Sh-Uyk" firstAttribute="top" secondItem="otF-EV-bBG" secondAttribute="top" id="GLP-oD-1kt"/>
+                                    <constraint firstAttribute="bottom" secondItem="fC4-AL-jmc" secondAttribute="bottom" id="SqG-VH-gp7"/>
+                                    <constraint firstAttribute="trailing" secondItem="zkM-Sh-Uyk" secondAttribute="trailing" id="XfU-IX-46f"/>
+                                    <constraint firstItem="wef-ba-f6F" firstAttribute="leading" secondItem="otF-EV-bBG" secondAttribute="leading" id="hza-CV-doS"/>
+                                    <constraint firstItem="fC4-AL-jmc" firstAttribute="leading" secondItem="otF-EV-bBG" secondAttribute="leading" id="jRs-mI-AeO"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOV-Rz-lq2">
+                                <rect key="frame" x="115" y="294" width="185" height="30"/>
+                                <color key="backgroundColor" red="0.83545174870466321" green="0.83545174870466321" blue="0.83545174870466321" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="ZSN-zP-Vol"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.0" blue="0.20019130639999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Search History"/>
+                                <connections>
+                                    <segue destination="riW-xk-VfI" kind="show" id="yuY-O0-0yv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4IH-Ez-JWo">
+                                <rect key="frame" x="112" y="547" width="191" height="71"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.2001913064394234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Calculate Mileage">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4IH-Ez-JWo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="92" id="5wd-89-k14"/>
+                            <constraint firstItem="tOV-Rz-lq2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="95" id="VIu-GC-fvK"/>
+                            <constraint firstItem="otF-EV-bBG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="fBB-8j-SFs"/>
+                            <constraint firstItem="tOV-Rz-lq2" firstAttribute="top" secondItem="otF-EV-bBG" secondAttribute="bottom" constant="60" id="m7a-wi-huY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tOV-Rz-lq2" secondAttribute="trailing" constant="94" id="uRP-2b-bBk"/>
+                            <constraint firstItem="otF-EV-bBG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="xLY-9h-QTN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4IH-Ez-JWo" secondAttribute="trailing" constant="91" id="xon-sx-FhY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="u6M-uw-OOS"/>
+                    <connections>
+                        <outlet property="airlinePickerView" destination="XEa-SD-T4y" id="XyZ-7m-v0d"/>
+                        <outlet property="arrivalAirportButton" destination="fdu-p9-cEe" id="p3k-JL-dcs"/>
+                        <outlet property="departureAirportButton" destination="y4Q-KJ-MUe" id="Sho-0Z-1NG"/>
+                        <outlet property="departureAirportLabel" destination="otF-EV-bBG" id="0Hs-pJ-iqi"/>
+                        <outlet property="fareClassButton" destination="6Pz-KG-vYg" id="ke1-3r-SrS"/>
+                        <outlet property="pickerTitleSegmentedControl" destination="BGw-kD-3Rf" id="anY-Ia-wUa"/>
+                        <outlet property="searchButton" destination="4IH-Ez-JWo" id="O0q-Wu-thX"/>
+                        <outlet property="searchHistoryButton" destination="tOV-Rz-lq2" id="ZNc-yB-fvZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840.57971014492762" y="122.28260869565219"/>
+        </scene>
+        <!--Airport Select Table View Controller-->
+        <scene sceneID="pnd-f8-hiX">
+            <objects>
+                <tableViewController id="auJ-id-ohT" customClass="AirportSelectTableViewController" customModule="MileageCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="PlD-Mc-aQm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AirportCell" textLabel="SWf-QA-Zq3" detailTextLabel="Oo8-yv-OUO" style="IBUITableViewCellStyleSubtitle" id="eRE-ZG-ecA">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eRE-ZG-ecA" id="gt7-wy-c6U">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SWf-QA-Zq3">
+                                            <rect key="frame" x="20.000000000000004" y="5" width="33.333333333333336" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Oo8-yv-OUO">
+                                            <rect key="frame" x="19.999999999999996" y="25.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="auJ-id-ohT" id="P53-Ya-4cN"/>
+                            <outlet property="delegate" destination="auJ-id-ohT" id="3kE-9y-nqR"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JIX-2E-hVC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1669" y="-148"/>
+        </scene>
+        <!--Search History Table View Controller-->
+        <scene sceneID="6UC-zk-nsq">
+            <objects>
+                <tableViewController id="riW-xk-VfI" customClass="SearchHistoryTableViewController" customModule="MileageCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" id="nhM-Zm-aEP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="searchHistoryCell" rowHeight="56" id="USA-ez-t7T">
+                                <rect key="frame" x="0.0" y="28" width="414" height="56"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="USA-ez-t7T" id="AIV-Wl-bH1">
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="55.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJI-KX-ZQv">
+                                            <rect key="frame" x="19" y="14" width="197" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="riW-xk-VfI" id="m1U-le-cxH"/>
+                            <outlet property="delegate" destination="riW-xk-VfI" id="gnf-Yg-ipV"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kzC-Wf-VDz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1669" y="655"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zN2-hN-mbC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LRy-a1-Gkd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O5W-jc-FfR">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="A1K-or-skU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdj-dG-YEF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-124" y="123"/>
+        </scene>
+    </scenes>
+</document>

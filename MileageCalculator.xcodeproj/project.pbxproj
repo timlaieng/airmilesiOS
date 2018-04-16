@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2236E8171F5DF6A200446D98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236E8161F5DF6A200446D98 /* AppDelegate.swift */; };
+		2236E8191F5DF6A200446D98 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236E8181F5DF6A200446D98 /* MainViewController.swift */; };
+		2236E81C1F5DF6A200446D98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2236E81A1F5DF6A200446D98 /* Main.storyboard */; };
+		2236E81E1F5DF6A200446D98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2236E81D1F5DF6A200446D98 /* Assets.xcassets */; };
+		2236E8211F5DF6A200446D98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2236E81F1F5DF6A200446D98 /* LaunchScreen.storyboard */; };
+		2236E82C1F5DF6A200446D98 /* MileageCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236E82B1F5DF6A200446D98 /* MileageCalculatorTests.swift */; };
+		2236E8371F5DF6A200446D98 /* MileageCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236E8361F5DF6A200446D98 /* MileageCalculatorUITests.swift */; };
+		224CAF081F73FA950005380B /* Search.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 224CAF061F73FA950005380B /* Search.xcdatamodeld */; };
+		224CAF471F7407630005380B /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224CAF461F7407630005380B /* Search.swift */; };
+		224CAF491F740A880005380B /* SearchHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224CAF481F740A880005380B /* SearchHistoryTableViewController.swift */; };
+		22B101891F8777C00078483B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B101881F8777C00078483B /* Response.swift */; };
+		22BEE28D1F799A260039EB84 /* AirportSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BEE28C1F799A260039EB84 /* AirportSelectTableViewController.swift */; };
+		22DB771A1F5EF3A10041D8F1 /* Airlines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB77191F5EF3A10041D8F1 /* Airlines.swift */; };
+		22DB771F1F5F04DE0041D8F1 /* airlines.json in Resources */ = {isa = PBXBuildFile; fileRef = 22DB771D1F5F04DE0041D8F1 /* airlines.json */; };
+		22DB77201F5F04DE0041D8F1 /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 22DB771E1F5F04DE0041D8F1 /* airports.json */; };
+		22DB77241F60520A0041D8F1 /* Airports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB77231F60520A0041D8F1 /* Airports.swift */; };
+		22DB77261F605B390041D8F1 /* FareBucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB77251F605B390041D8F1 /* FareBucket.swift */; };
+		6BAB8612C1995924D521B1DA /* Pods_MileageCalculatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB743094833625D19A4CD5 /* Pods_MileageCalculatorUITests.framework */; };
+		AEE176CEEFFD0D61D7BC7B70 /* Pods_MileageCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F96C669BF7C19153B8D4C0 /* Pods_MileageCalculator.framework */; };
+		EA7FDEF14E0DF24AEA166834 /* Pods_MileageCalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BE1CF50B31FA46F63979C1 /* Pods_MileageCalculatorTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2236E8281F5DF6A200446D98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2236E80B1F5DF6A200446D98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2236E8121F5DF6A200446D98;
+			remoteInfo = MileageCalculator;
+		};
+		2236E8331F5DF6A200446D98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2236E80B1F5DF6A200446D98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2236E8121F5DF6A200446D98;
+			remoteInfo = MileageCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01BE1CF50B31FA46F63979C1 /* Pods_MileageCalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MileageCalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F2641C49F56E3B0792BB280 /* Pods-MileageCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileageCalculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MileageCalculator/Pods-MileageCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		20CB743094833625D19A4CD5 /* Pods_MileageCalculatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MileageCalculatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2236E8131F5DF6A200446D98 /* MileageCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MileageCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2236E8161F5DF6A200446D98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2236E8181F5DF6A200446D98 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2236E81B1F5DF6A200446D98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2236E81D1F5DF6A200446D98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2236E8201F5DF6A200446D98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2236E8221F5DF6A200446D98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2236E8271F5DF6A200446D98 /* MileageCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MileageCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2236E82B1F5DF6A200446D98 /* MileageCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MileageCalculatorTests.swift; sourceTree = "<group>"; };
+		2236E82D1F5DF6A200446D98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2236E8321F5DF6A200446D98 /* MileageCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MileageCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2236E8361F5DF6A200446D98 /* MileageCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MileageCalculatorUITests.swift; sourceTree = "<group>"; };
+		2236E8381F5DF6A200446D98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		224CAF071F73FA950005380B /* Search.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Search.xcdatamodel; sourceTree = "<group>"; };
+		224CAF461F7407630005380B /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		224CAF481F740A880005380B /* SearchHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHistoryTableViewController.swift; sourceTree = "<group>"; };
+		22B101881F8777C00078483B /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		22BEE28C1F799A260039EB84 /* AirportSelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportSelectTableViewController.swift; sourceTree = "<group>"; };
+		22DB77191F5EF3A10041D8F1 /* Airlines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Airlines.swift; sourceTree = "<group>"; };
+		22DB771D1F5F04DE0041D8F1 /* airlines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airlines.json; sourceTree = "<group>"; };
+		22DB771E1F5F04DE0041D8F1 /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
+		22DB77231F60520A0041D8F1 /* Airports.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Airports.swift; sourceTree = "<group>"; };
+		22DB77251F605B390041D8F1 /* FareBucket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FareBucket.swift; sourceTree = "<group>"; };
+		258D8E267B1C8B5952016F1B /* Pods-MileageCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileageCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-MileageCalculator/Pods-MileageCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		3A16F22445A3947EF4075CF8 /* Pods-MileageCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileageCalculatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MileageCalculatorTests/Pods-MileageCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4288758C48596EC01F094479 /* Pods-MileageCalculatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileageCalculatorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MileageCalculatorUITests/Pods-MileageCalculatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9264374428F6A810DFBE9232 /* Pods-MileageCalculatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileageCalculatorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MileageCalculatorUITests/Pods-MileageCalculatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B0F96C669BF7C19153B8D4C0 /* Pods_MileageCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MileageCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C09707F6064EC68F596AAB46 /* Pods-MileageCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MileageCalculatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MileageCalculatorTests/Pods-MileageCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2236E8101F5DF6A200446D98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEE176CEEFFD0D61D7BC7B70 /* Pods_MileageCalculator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2236E8241F5DF6A200446D98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7FDEF14E0DF24AEA166834 /* Pods_MileageCalculatorTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2236E82F1F5DF6A200446D98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BAB8612C1995924D521B1DA /* Pods_MileageCalculatorUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F2CB810C9D42653E9771ED9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0F96C669BF7C19153B8D4C0 /* Pods_MileageCalculator.framework */,
+				01BE1CF50B31FA46F63979C1 /* Pods_MileageCalculatorTests.framework */,
+				20CB743094833625D19A4CD5 /* Pods_MileageCalculatorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2236E80A1F5DF6A200446D98 = {
+			isa = PBXGroup;
+			children = (
+				2236E8151F5DF6A200446D98 /* MileageCalculator */,
+				22DB77171F5EF3620041D8F1 /* View */,
+				2236E82A1F5DF6A200446D98 /* MileageCalculatorTests */,
+				2236E8351F5DF6A200446D98 /* MileageCalculatorUITests */,
+				2236E8141F5DF6A200446D98 /* Products */,
+				B1DC290405AC45A114A80B1A /* Pods */,
+				0F2CB810C9D42653E9771ED9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2236E8141F5DF6A200446D98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2236E8131F5DF6A200446D98 /* MileageCalculator.app */,
+				2236E8271F5DF6A200446D98 /* MileageCalculatorTests.xctest */,
+				2236E8321F5DF6A200446D98 /* MileageCalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2236E8151F5DF6A200446D98 /* MileageCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				22DB771C1F5F04DE0041D8F1 /* Resources */,
+				22DB77181F5EF3720041D8F1 /* Controller */,
+				22DB77151F5EF34C0041D8F1 /* Model */,
+				2236E81D1F5DF6A200446D98 /* Assets.xcassets */,
+				2236E81F1F5DF6A200446D98 /* LaunchScreen.storyboard */,
+				2236E8221F5DF6A200446D98 /* Info.plist */,
+			);
+			path = MileageCalculator;
+			sourceTree = "<group>";
+		};
+		2236E82A1F5DF6A200446D98 /* MileageCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				2236E82B1F5DF6A200446D98 /* MileageCalculatorTests.swift */,
+				2236E82D1F5DF6A200446D98 /* Info.plist */,
+			);
+			path = MileageCalculatorTests;
+			sourceTree = "<group>";
+		};
+		2236E8351F5DF6A200446D98 /* MileageCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2236E8361F5DF6A200446D98 /* MileageCalculatorUITests.swift */,
+				2236E8381F5DF6A200446D98 /* Info.plist */,
+			);
+			path = MileageCalculatorUITests;
+			sourceTree = "<group>";
+		};
+		22DB77151F5EF34C0041D8F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22DB77191F5EF3A10041D8F1 /* Airlines.swift */,
+				22B101881F8777C00078483B /* Response.swift */,
+				224CAF061F73FA950005380B /* Search.xcdatamodeld */,
+				22DB77231F60520A0041D8F1 /* Airports.swift */,
+				224CAF461F7407630005380B /* Search.swift */,
+				22DB77251F605B390041D8F1 /* FareBucket.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		22DB77171F5EF3620041D8F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2236E81A1F5DF6A200446D98 /* Main.storyboard */,
+			);
+			name = View;
+			path = MileageCalculator;
+			sourceTree = "<group>";
+		};
+		22DB77181F5EF3720041D8F1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2236E8161F5DF6A200446D98 /* AppDelegate.swift */,
+				2236E8181F5DF6A200446D98 /* MainViewController.swift */,
+				224CAF481F740A880005380B /* SearchHistoryTableViewController.swift */,
+				22BEE28C1F799A260039EB84 /* AirportSelectTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		22DB771C1F5F04DE0041D8F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				22DB771D1F5F04DE0041D8F1 /* airlines.json */,
+				22DB771E1F5F04DE0041D8F1 /* airports.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B1DC290405AC45A114A80B1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F2641C49F56E3B0792BB280 /* Pods-MileageCalculator.debug.xcconfig */,
+				258D8E267B1C8B5952016F1B /* Pods-MileageCalculator.release.xcconfig */,
+				3A16F22445A3947EF4075CF8 /* Pods-MileageCalculatorTests.debug.xcconfig */,
+				C09707F6064EC68F596AAB46 /* Pods-MileageCalculatorTests.release.xcconfig */,
+				4288758C48596EC01F094479 /* Pods-MileageCalculatorUITests.debug.xcconfig */,
+				9264374428F6A810DFBE9232 /* Pods-MileageCalculatorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2236E8121F5DF6A200446D98 /* MileageCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2236E83B1F5DF6A200446D98 /* Build configuration list for PBXNativeTarget "MileageCalculator" */;
+			buildPhases = (
+				BDCC430CDF8E88A5A6D45C23 /* [CP] Check Pods Manifest.lock */,
+				2236E80F1F5DF6A200446D98 /* Sources */,
+				2236E8101F5DF6A200446D98 /* Frameworks */,
+				2236E8111F5DF6A200446D98 /* Resources */,
+				E2119D41B87A3107A6C38FF5 /* [CP] Embed Pods Frameworks */,
+				9C3002782C057577F50B9DDB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MileageCalculator;
+			productName = MileageCalculator;
+			productReference = 2236E8131F5DF6A200446D98 /* MileageCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2236E8261F5DF6A200446D98 /* MileageCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2236E83E1F5DF6A200446D98 /* Build configuration list for PBXNativeTarget "MileageCalculatorTests" */;
+			buildPhases = (
+				D19BF9A6A2BF7D317E469931 /* [CP] Check Pods Manifest.lock */,
+				2236E8231F5DF6A200446D98 /* Sources */,
+				2236E8241F5DF6A200446D98 /* Frameworks */,
+				2236E8251F5DF6A200446D98 /* Resources */,
+				7282250191C99071DF3A1253 /* [CP] Embed Pods Frameworks */,
+				2BF69EFC62871887B2101B1D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2236E8291F5DF6A200446D98 /* PBXTargetDependency */,
+			);
+			name = MileageCalculatorTests;
+			productName = MileageCalculatorTests;
+			productReference = 2236E8271F5DF6A200446D98 /* MileageCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2236E8311F5DF6A200446D98 /* MileageCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2236E8411F5DF6A200446D98 /* Build configuration list for PBXNativeTarget "MileageCalculatorUITests" */;
+			buildPhases = (
+				FD5DA75D10EE1D8B8525657F /* [CP] Check Pods Manifest.lock */,
+				2236E82E1F5DF6A200446D98 /* Sources */,
+				2236E82F1F5DF6A200446D98 /* Frameworks */,
+				2236E8301F5DF6A200446D98 /* Resources */,
+				5A74BEBEAE01392838C774E3 /* [CP] Embed Pods Frameworks */,
+				95903BD5F97452835AEEB33A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2236E8341F5DF6A200446D98 /* PBXTargetDependency */,
+			);
+			name = MileageCalculatorUITests;
+			productName = MileageCalculatorUITests;
+			productReference = 2236E8321F5DF6A200446D98 /* MileageCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2236E80B1F5DF6A200446D98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Tim Lai";
+				TargetAttributes = {
+					2236E8121F5DF6A200446D98 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PP8TNP5NQ3;
+						LastSwiftMigration = 0930;
+						ProvisioningStyle = Automatic;
+					};
+					2236E8261F5DF6A200446D98 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = M7UDK54Z99;
+						LastSwiftMigration = 0930;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2236E8121F5DF6A200446D98;
+					};
+					2236E8311F5DF6A200446D98 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = M7UDK54Z99;
+						LastSwiftMigration = 0930;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2236E8121F5DF6A200446D98;
+					};
+				};
+			};
+			buildConfigurationList = 2236E80E1F5DF6A200446D98 /* Build configuration list for PBXProject "MileageCalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2236E80A1F5DF6A200446D98;
+			productRefGroup = 2236E8141F5DF6A200446D98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2236E8121F5DF6A200446D98 /* MileageCalculator */,
+				2236E8261F5DF6A200446D98 /* MileageCalculatorTests */,
+				2236E8311F5DF6A200446D98 /* MileageCalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2236E8111F5DF6A200446D98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DB771F1F5F04DE0041D8F1 /* airlines.json in Resources */,
+				2236E8211F5DF6A200446D98 /* LaunchScreen.storyboard in Resources */,
+				2236E81E1F5DF6A200446D98 /* Assets.xcassets in Resources */,
+				2236E81C1F5DF6A200446D98 /* Main.storyboard in Resources */,
+				22DB77201F5F04DE0041D8F1 /* airports.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2236E8251F5DF6A200446D98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2236E8301F5DF6A200446D98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BF69EFC62871887B2101B1D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MileageCalculatorTests/Pods-MileageCalculatorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A74BEBEAE01392838C774E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MileageCalculatorUITests/Pods-MileageCalculatorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7282250191C99071DF3A1253 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MileageCalculatorTests/Pods-MileageCalculatorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95903BD5F97452835AEEB33A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MileageCalculatorUITests/Pods-MileageCalculatorUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C3002782C057577F50B9DDB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MileageCalculator/Pods-MileageCalculator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDCC430CDF8E88A5A6D45C23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D19BF9A6A2BF7D317E469931 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E2119D41B87A3107A6C38FF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MileageCalculator/Pods-MileageCalculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD5DA75D10EE1D8B8525657F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2236E80F1F5DF6A200446D98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				224CAF491F740A880005380B /* SearchHistoryTableViewController.swift in Sources */,
+				22BEE28D1F799A260039EB84 /* AirportSelectTableViewController.swift in Sources */,
+				22DB771A1F5EF3A10041D8F1 /* Airlines.swift in Sources */,
+				22DB77241F60520A0041D8F1 /* Airports.swift in Sources */,
+				22B101891F8777C00078483B /* Response.swift in Sources */,
+				2236E8191F5DF6A200446D98 /* MainViewController.swift in Sources */,
+				2236E8171F5DF6A200446D98 /* AppDelegate.swift in Sources */,
+				22DB77261F605B390041D8F1 /* FareBucket.swift in Sources */,
+				224CAF081F73FA950005380B /* Search.xcdatamodeld in Sources */,
+				224CAF471F7407630005380B /* Search.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2236E8231F5DF6A200446D98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2236E82C1F5DF6A200446D98 /* MileageCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2236E82E1F5DF6A200446D98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2236E8371F5DF6A200446D98 /* MileageCalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2236E8291F5DF6A200446D98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2236E8121F5DF6A200446D98 /* MileageCalculator */;
+			targetProxy = 2236E8281F5DF6A200446D98 /* PBXContainerItemProxy */;
+		};
+		2236E8341F5DF6A200446D98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2236E8121F5DF6A200446D98 /* MileageCalculator */;
+			targetProxy = 2236E8331F5DF6A200446D98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2236E81A1F5DF6A200446D98 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2236E81B1F5DF6A200446D98 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2236E81F1F5DF6A200446D98 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2236E8201F5DF6A200446D98 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2236E8391F5DF6A200446D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2236E83A1F5DF6A200446D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2236E83C1F5DF6A200446D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F2641C49F56E3B0792BB280 /* Pods-MileageCalculator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PP8TNP5NQ3;
+				INFOPLIST_FILE = MileageCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Flamboyant-Solutions-Ltd..MileageCalculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		2236E83D1F5DF6A200446D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 258D8E267B1C8B5952016F1B /* Pods-MileageCalculator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PP8TNP5NQ3;
+				INFOPLIST_FILE = MileageCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Flamboyant-Solutions-Ltd..MileageCalculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		2236E83F1F5DF6A200446D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A16F22445A3947EF4075CF8 /* Pods-MileageCalculatorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = M7UDK54Z99;
+				INFOPLIST_FILE = MileageCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Flamboyant-Solutions-Ltd..MileageCalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MileageCalculator.app/MileageCalculator";
+			};
+			name = Debug;
+		};
+		2236E8401F5DF6A200446D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C09707F6064EC68F596AAB46 /* Pods-MileageCalculatorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = M7UDK54Z99;
+				INFOPLIST_FILE = MileageCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Flamboyant-Solutions-Ltd..MileageCalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MileageCalculator.app/MileageCalculator";
+			};
+			name = Release;
+		};
+		2236E8421F5DF6A200446D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4288758C48596EC01F094479 /* Pods-MileageCalculatorUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = M7UDK54Z99;
+				INFOPLIST_FILE = MileageCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Flamboyant-Solutions-Ltd..MileageCalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = MileageCalculator;
+			};
+			name = Debug;
+		};
+		2236E8431F5DF6A200446D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9264374428F6A810DFBE9232 /* Pods-MileageCalculatorUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = M7UDK54Z99;
+				INFOPLIST_FILE = MileageCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Flamboyant-Solutions-Ltd..MileageCalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = MileageCalculator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2236E80E1F5DF6A200446D98 /* Build configuration list for PBXProject "MileageCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2236E8391F5DF6A200446D98 /* Debug */,
+				2236E83A1F5DF6A200446D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2236E83B1F5DF6A200446D98 /* Build configuration list for PBXNativeTarget "MileageCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2236E83C1F5DF6A200446D98 /* Debug */,
+				2236E83D1F5DF6A200446D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2236E83E1F5DF6A200446D98 /* Build configuration list for PBXNativeTarget "MileageCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2236E83F1F5DF6A200446D98 /* Debug */,
+				2236E8401F5DF6A200446D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2236E8411F5DF6A200446D98 /* Build configuration list for PBXNativeTarget "MileageCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2236E8421F5DF6A200446D98 /* Debug */,
+				2236E8431F5DF6A200446D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		224CAF061F73FA950005380B /* Search.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				224CAF071F73FA950005380B /* Search.xcdatamodel */,
+			);
+			currentVersion = 224CAF071F73FA950005380B /* Search.xcdatamodel */;
+			path = Search.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2236E80B1F5DF6A200446D98 /* Project object */;
+}
